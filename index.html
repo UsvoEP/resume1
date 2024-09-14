@@ -1,80 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, course, css, tags">
     <meta name="description" content="Резюме Усов Евгений Петрович">
     <title>Резюме Усов Евгений</title>
+    <link rel="stylesheet" href="css_resume.css">
 </head>
+
 <body>
-    <img src="https://sun9-40.userapi.com/impf/c638517/v638517530/e203/pvvuOxNzIhk.jpg?size=1280x853&quality=96&sign=0a289ec9e1d9713cc09491de41062298&type=album" width="300"
-    <br>
-    <h1>Усов Евгений Петрович</h1>
-    <p>Родился в 2000 году в городе воинской славы - <strong>Таганроге</strong>. <br>Люблю играть в футбол и смотреть его. Встречаюсь с <em>Анастасией Фоминой</em></p>
-    <p><strong>Список социальных сетей</strong></p>
-    <a href="https://vk.com/sarkont" target="_blank">Вконтакте</a>
-    |
-    <a href="https://t.me/sarkont" target="_blank">Telegram</a>
-    <br>
-    <p><strong>Мои хобби</strong></p>
-    <ol>
-        <li>Футбол</li>
-        <li>Фильмы</li>
-        <li>Игры</li>
-    </ol>
-    <p><strong>Опыт работы</strong></p>
-    <table width="500">
-        <thead>
+    <div class="container">
+        <div class="info">
+            <img src="https://sun9-40.userapi.com/impf/c638517/v638517530/e203/pvvuOxNzIhk.jpg?size=1280x853&quality=96&sign=0a289ec9e1d9713cc09491de41062298&type=album"
+                alt="Усов Евгений" class="avatar">
+
+            <div class="info-text">
+                <h1>Усов Евгений</h1>
+                <p>Родился в 2000 году в городе воинской славы - <strong>Таганроге</strong>.</p>
+                <p>Люблю играть в футбол и смотреть фильмы. Встречаюсь с <em><a href="https://vk.com/agfomina"
+                            target="_blank" class="Fomina">Анастасией Фоминой</a></em></p>
+
+                <h4>Список социальных сетей:</h4>
+                <a href="https://vk.com/sarkont" target="_blank" class="links">Вконтакте</a>
+                |
+                <a href="https://t.me/sarkont" target="_blank" class="links">Telegram</a>
+            </div>
+        </div>
+
+        <div class="card bg-green">
+            <h4><strong>Мои хобби</strong></h4>
+            <ol class="list">
+                <li>Футбол</li>
+                <li>Фильмы</li>
+                <li>Игры</li>
+            </ol>
+
+        </div>
+        <div class="card bg-red">
+            <h4><strong>Опыт работы</strong></h4>
+            <table class="table">
+                <!-- <thead>
             <tr>
                 <th>Название</th>
                 <th>Должность</th>
                 <th>Год</th>
             </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Аквапарк Лазурный</td>
-                <td>Спасатель</td>
-                <td>2020-2021</td>
-            </tr>
-           </tbody>
-           <tbody>
-            <tr>
-                <td>JusticeIT</td>
-                <td>Sales researcher</td>
-                <td>2021-2022</td>
-            </tr>
-           </tbody>
-           <tbody>
-            <tr>
-                <td>Яндекс-доставка</td>
-                <td>Курьер</td>
-                <td>2021</td>
-            </tr>
-           </tbody>
-           <tbody>
-            <tr>
-                <td>Банкет-холл "Облака"</td>
-                <td>Звуковик</td>
-                <td>2022-2024</td>
-            </tr>
-           </tbody>
-    </table>
-    <p><strong>Связаться со мной</strong></p>
-   <div>
-    <label for="text">Ваше имя:</label>
-    <input type="text" name="" id="text" placeholder="Введите имя">
+        </thead> -->
+                <tbody>
+                    <tr>
+                        <td>Аквапарк Лазурный</td>
+                        <td>Спасатель</td>
+                        <td>2020-2021</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>JusticeIT</td>
+                        <td>Sales researcher</td>
+                        <td>2021-2022</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Яндекс-доставка</td>
+                        <td>Курьер</td>
+                        <td>2021</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Банкет-холл "Облака"</td>
+                        <td>Звуковик</td>
+                        <td>2022-2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card bg-yellow">
+
+
+
+            <form action="/" class="form">
+                <h4>Связаться со мной</h4>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="text">Ваше имя:</label>
+                        <input type="text" name="" id="text" placeholder="Введите имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" name="" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Ваше сообщение</label>
+
+                    <textarea id="message" cols="25" rows="5" placeholder="Введите ваше сообщение"></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
     </div>
-    <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" name="" id="email" placeholder="Введите email">
-        </div>
-        <div>
-            <label for="message">Ваше сообщение</label>
-            <br>
-            <textarea id="message" cols="25" rows="5" placeholder="Введите ваше сообщение"></textarea>
-        </div>
-        <button type="submit">Отправить</button>
 </body>
+
 </html>
